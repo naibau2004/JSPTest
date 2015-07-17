@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="BIG5">
+<title>Normal Html</title>
+</head>
+<body>
+
+<!-- 這邊指定方法是使用POST，預設是使用Get，DD(Web.xml對應到Servlet)是SelectBeer.do -->
+<form method="POST" action="SelectBeer.do">
+Select beer characteristics<p>
+
+<!--這個Color是參數，用來承接下面的value-->
+Color:
+<!-- 一般的Html下拉式選單 -->
+<select name="color" size="1">      
+    <option value="light"> light </option>
+    <option value="amber"> amber </option>
+    <option value="brown"> brown </option>
+    <option value="dark"> dark </option>
+</select>
+
+<br><br>
+
+<!--這次參數是body，用來承接下面的value-->
+Body:
+<!-- 一般的Html下拉式選單 -->
+<select name="body" size="1">      
+    <option value="light"> light </option>
+    <option value="medium"> medium </option>
+    <option value="heavy"> heavy </option>
+</select>
+
+Can Sizes : <p>
+<!-- 一般的勾選box sizes是字串陣列-->
+<input type=checkbox name=sizes value="12oz"> 12 oz. <br>
+<input type=checkbox name=sizes value="16oz"> 16 oz. <br>
+<input type=checkbox name=sizes value="22oz"> 22 oz. <br>
+
+
+<center>
+    <!-- 一般的按鈕，類型是送出 -->
+    <input type="submit">
+</center>
+
+</form>
+</body>
+</html>
